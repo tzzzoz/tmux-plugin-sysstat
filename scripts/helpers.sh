@@ -17,15 +17,15 @@ set_tmux_option() {
 }
 
 is_osx() {
-  [ $(uname) == "Darwin" ]
+  [ $(uname) = "Darwin" ]
 }
 
 is_linux(){
-  [ $(uname -s) == "Linux" ]
+  [ $(uname -s) = "Linux" ]
 }
 
 is_freebsd() {
-    [ $(uname) == FreeBSD ]
+    [ $(uname) = FreeBSD ]
 }
 
 command_exists() {
